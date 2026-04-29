@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Pomodoro Timer</h1>
+
+      <section class="card timer-card">
+        <div class="modes">
+          <button class="mode-btn active" data-mode="pomodoro">Pomodoro</button>
+          <button class="mode-btn" data-mode="shortBreak">Short Break</button>
+          <button class="mode-btn" data-mode="longBreak">Long Break</button>
+        </div>
+
+        <div id="timeDisplay" class="time">25:00</div>
+        <p id="statusText" class="status">Ready to focus</p>
+
+        <div class="controls">
+          <button id="startBtn" class="btn primary">Start</button>
+          <button id="pauseBtn" class="btn">Pause</button>
+          <button id="resetBtn" class="btn">Reset</button>
+        </div>
+      </section>
+
+      <section class="card task-card">
+        <h2>Tasks</h2>
+        <div class="task-input-row">
+          <input id="taskInput" type="text" placeholder="Add a task..." />
+          <button id="addTaskBtn" class="btn primary">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
